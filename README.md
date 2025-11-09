@@ -67,6 +67,7 @@ cd codeassist
 - Now click create new token, select write, input any name and create
   
 <img width="1009" height="469" alt="image" src="https://github.com/user-attachments/assets/098b1991-a682-4a79-b3ed-50e130a844dd" />
+
 - copy the token and save it somewhere
 
 ## 4. Enter this command in your directory to run codeassist 
