@@ -61,8 +61,11 @@ cd codeassist
 ### now to start the node, you'll need huggingface token with write permission
 - **Go to `https://huggingface.co/` and create account if you currently don't have one**
 - **Click profile photo by top right, click access tokens**
+  
   <img width="1440" height="779" alt="image" src="https://github.com/user-attachments/assets/8bdc20d0-de95-41ab-96d3-07a1e2c8bfa4" />
+  
 - Now click create new token, select write, input any name and create
+  
 <img width="1009" height="469" alt="image" src="https://github.com/user-attachments/assets/098b1991-a682-4a79-b3ed-50e130a844dd" />
 - copy the token and save it somewhere
 
