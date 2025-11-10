@@ -49,6 +49,10 @@ sudo systemctl restart docker
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+```bash
+echo 'export PATH=$PATH:/root/.local/bin' >> ~/.bashrc
+source ~/.bashrc
+```
 
 ## 3. Clone the repo and Go into directory
 ```bash
@@ -74,7 +78,57 @@ cd codeassist
 ```bash
 uv run run.py
 ```
+**And if you are running rl-swarm on same VPS,using port 3000 then run this with a different port flag, i.e
+
+```bash
+uv run run.py --port 3001
+```
 **it,ll ask for your huggingface token, enter the access token you created and let it build**
 **takes a couple of minutes to set up the containers so be patient**
 
-**Once it gets here and asks you to open url on browser, you'll need to forward ports over SSH**
+<img width="915" height="652" alt="image" src="https://github.com/user-attachments/assets/b17cd961-c42b-436f-a74c-b7bc5e36851f" />
+**take note of this, nothing will be shown when you paste huggingface token
+
+
+**Once it gets here and asks you to open url on browser, you'll need to forward ports over SSH(see step 5)**
+
+<img width="963" height="641" alt="image" src="https://github.com/user-attachments/assets/9fbce663-bbe9-48ef-88ce-566dc41f378c" />
+
+## 5. Forward ports over SSH
+- If you are on window or Mac, open WSL (FOR WINDOWS) and Terminal (for mac) and paste this:
+  ```bash
+  ssh -L 8000:localhost:8000 -L 8008:localhost:8008 -L 3000:localhost:3000 -L 8001:localhost:8001 yourVPSusername@yourVPSIP
+  ```
+  **If you are running it with port 3001 then change 3000 to 3001 before forwarding in your WSL or Terminal**
+  **Replace `yourVPSusername` with the actual one for your VPS**
+  **Replace `yourVPSIP` with your VPS ip address
+  
+- example:
+  
+  <img width="1280" height="441" alt="image" src="https://github.com/user-attachments/assets/202ab744-ec79-4de5-b573-cc3029896a50" />
+
+  **You'll see `Are you sure you want to continue connecting (yes/no/[fingerprint])?` type `yes`**
+  **enter your VPS password when prompt for password**
+  
+  - you should now see something like this:
+ ![IMG_7077](https://github.com/user-attachments/assets/08484943-d8eb-43b7-9d57-054e0ff89218)
+
+## 6. Open *http://localhost:3000* or *http://localhost:3001* in your browser. depending on the port used
+
+![telegram-cloud-photo-size-4-5805248209151003480-y](https://github.com/user-attachments/assets/04c31b01-43ee-476c-8fcd-ea0fe1fbf624)
+**By your left is the problem, solve it on your right and use the submit solution button**
+**try to submit at least 2 to 3 solution and don't just copy paste directly from anywhere**
+
+![telegram-cloud-photo-size-4-5805248209151003498-y](https://github.com/user-attachments/assets/8f9d3031-61e5-44e1-ab5c-c1a927c23415)
+
+
+### After submitting some solution, go back to your VPS and use ctrl c then wait for your model to be uploaded to HF
+
+![telegram-cloud-photo-size-4-5805248209151003500-y](https://github.com/user-attachments/assets/926075d0-f351-49cd-97f4-77e686991494)
+
+**Done, you can track your points on dashboard by sighning in with same email and OTP**
+
+
+
+
+    
