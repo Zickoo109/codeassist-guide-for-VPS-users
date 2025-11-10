@@ -78,19 +78,21 @@ cd codeassist
 ```bash
 uv run run.py
 ```
-**And if you are running rl-swarm on same VPS,using port 3000 then run this with a different port flag, i.e
+- And if you are running rl-swarm on same VPS,using port 3000 then run this with a different port flag, i.e
 
 ```bash
 uv run run.py --port 3001
 ```
 **it,ll ask for your huggingface token, enter the access token you created and let it build**
+
 **takes a couple of minutes to set up the containers so be patient**
 
 <img width="915" height="652" alt="image" src="https://github.com/user-attachments/assets/b17cd961-c42b-436f-a74c-b7bc5e36851f" />
-**take note of this, nothing will be shown when you paste huggingface token
+
+**take note of this, nothing will be shown when you paste huggingface token**
 
 
-**Once it gets here and asks you to open url on browser, you'll need to forward ports over SSH(see step 5)**
+**Once it gets here and asks you to open url on browser, you'll need to forward ports over SSH(see step 5)*
 
 <img width="963" height="641" alt="image" src="https://github.com/user-attachments/assets/9fbce663-bbe9-48ef-88ce-566dc41f378c" />
 
