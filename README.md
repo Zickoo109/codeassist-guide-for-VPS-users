@@ -102,7 +102,9 @@ uv run run.py --port 3001
   ssh -L 8000:localhost:8000 -L 8008:localhost:8008 -L 3000:localhost:3000 -L 8001:localhost:8001 yourVPSusername@yourVPSIP
   ```
   **If you are running it with port 3001 then change 3000 to 3001 before forwarding in your WSL or Terminal**
+  
   **Replace `yourVPSusername` with the actual one for your VPS**
+  
   **Replace `yourVPSIP` with your VPS ip address
   
 - example:
@@ -118,7 +120,9 @@ uv run run.py --port 3001
 ## 6. Open *http://localhost:3000* or *http://localhost:3001* in your browser. depending on the port used
 
 ![telegram-cloud-photo-size-4-5805248209151003480-y](https://github.com/user-attachments/assets/04c31b01-43ee-476c-8fcd-ea0fe1fbf624)
+
 **By your left is the problem, solve it on your right and use the submit solution button**
+
 **try to submit at least 2 to 3 solution and don't just copy paste directly from anywhere**
 
 ![telegram-cloud-photo-size-4-5805248209151003498-y](https://github.com/user-attachments/assets/8f9d3031-61e5-44e1-ab5c-c1a927c23415)
