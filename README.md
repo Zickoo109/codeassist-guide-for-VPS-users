@@ -78,15 +78,15 @@ cd codeassist
 ```bash
 uv run run.py
 ```
-- And if you are running rl-swarm on same VPS or PC, then follow these steps and run this with a different port flag, i.e
 
-**i**
+### And if you are running rl-swarm on same VPS or PC, then follow these steps and run this with a different port flag, i.e
+
+- i
 ```bash
   sed -i '0,/11434/s//11435/' compose.yml
 sed -i -e 's/"11434\/tcp": 11434/"11434\/tcp": 11435/' -e 's#http://localhost:11434#http://localhost:11435#' run.py
 ```
-
-**ii**
+- ii
 ```bash
 cd web-ui/src/simulation/simulators
 ```
@@ -94,14 +94,12 @@ cd web-ui/src/simulation/simulators
 sed -i 's#http://localhost:11434#http://localhost:11435#' OllamaCodeSimulator.ts
 ```
 ```bash
-cd
-```
-```bash
-cd codeassist
+cd && cd codeassist
 ```
 ```bash
 uv run run.py --port 3001
 ```
+
 **it,ll ask for your huggingface token, enter the access token you created and let it build**
 
 **takes a couple of minutes to set up the containers so be patient**
