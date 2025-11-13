@@ -78,8 +78,27 @@ cd codeassist
 ```bash
 uv run run.py
 ```
-- And if you are running rl-swarm on same VPS,using port 3000 then run this with a different port flag, i.e
+- And if you are running rl-swarm on same VPS or PC, then follow these steps and run this with a different port flag, i.e
 
+**i**
+```bash
+  sed -i '0,/11434/s//11435/' compose.yml
+sed -i -e 's/"11434\/tcp": 11434/"11434\/tcp": 11435/' -e 's#http://localhost:11434#http://localhost:11435#' run.py
+```
+
+**ii**
+```bash
+cd web-ui/src/simulation/simulators
+```
+```bash
+sed -i 's#http://localhost:11434#http://localhost:11435#' OllamaCodeSimulator.ts
+```
+```bash
+cd
+```
+```bash
+cd codeassist
+```
 ```bash
 uv run run.py --port 3001
 ```
