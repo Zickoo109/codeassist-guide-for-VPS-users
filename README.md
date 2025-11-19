@@ -136,6 +136,14 @@ uv run run.py --port 3001
 
 ## 6. Open *http://localhost:3000* or *http://localhost:3001* in your browser. depending on the port used
 
+### Alternatively you can use localtunnel**
+**Open another tab of your VPS and run:**
+
+```bash
+sudo npm install -g localtunnel && lt --port 3000
+```
+**Change 3000 to 3001 if thats the port you run codeassist on.**
+
 ![telegram-cloud-photo-size-4-5805248209151003480-y](https://github.com/user-attachments/assets/04c31b01-43ee-476c-8fcd-ea0fe1fbf624)
 
 **By your left is the problem, solve it on your right and use the submit solution button**
