@@ -136,7 +136,7 @@ uv run run.py --port 3001
 
 ## 6. Open *http://localhost:3000* or *http://localhost:3001* in your browser. depending on the port used
 
-### Alternatively you can use localtunnel**
+### Alternatively you can use localtunnel
 **Open another tab of your VPS and run:**
 
 ```bash
